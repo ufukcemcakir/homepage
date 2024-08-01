@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.profile img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.contact-icons{
+    width: auto;
+    height: 25px;
+    }
+
+.about {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.social-linkss{
+    align-self: flex-end;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+i{
+    font-size: 40px;
+}
+
+/* Work Section Styles */
+.my-work {
+    padding: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.project {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.screenshot {
+    background-color: #ddd;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.project-images{
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00a0b0;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .content {
+    flex: 2;
+}
+
+footer .image {
+    flex: 1;
+    margin-left: 2rem;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile {
+        margin-bottom: 2rem;
+    }
+
+    .about {
+        margin-left: 0;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .image {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    header, .my-work, footer {
+        padding: 1rem;
+    }
+
+    .profile img {
+        max-width: 200px;
+    }
+
+    .project {
+        margin-bottom: 1rem;
+    }
+
+    .social-links a {
+        padding: 10px;
+        margin: 0 5px;
+    }
+}
